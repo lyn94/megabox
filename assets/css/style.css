@@ -1,0 +1,267 @@
+/* 가운데 영역 middle section*/
+.container {
+    position: relative;
+    width: 1280px;
+    margin: 0 auto;
+}
+
+/* 로우 영역 row section*/
+.row {
+    padding: 0 28px;
+}
+
+/* 레이아웃 layout */
+#header {
+    width: 100%;
+}
+
+#banner {
+    position: relative;
+}
+
+#mNav {
+    display: none;
+    position: absolute;
+    top: 8px;
+    right: 14px;
+}
+
+/* 헤더 header */
+.header h1 {
+    float: left;
+}
+
+.header h1 strong {
+    padding: 8px 8px 3px 0;
+    display: inline-block;
+}
+
+.header h1 strong img {
+    width: 155px;
+}
+
+.header h1 em {
+    display: block;
+    position: absolute;
+    top: 17px;
+    left: 195px;
+}
+
+.header h1 em img {
+    width: 126px;
+}
+
+.header .nav {
+    float: right;
+}
+
+.header .nav ul li {
+    float: left;
+    padding: 0 10px;
+}
+
+.header .nav ul li a {
+    display: block;
+    padding: 14px 10px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.header .nav ul li.last {
+    padding: 0;
+}
+
+/* 모바일 네비게이션 mobile nav */
+.ham {
+    display: block;
+    width: 25px;
+    height: 10px;
+    padding: 15px 10px 10px;
+}
+
+.ham span {
+    position: relative;
+    display: block;
+    width: 25px;
+    height: 4px;
+    background-color: #39106a;
+}
+
+.ham span:before {
+    content: '';
+    width: 25px;
+    height: 4px;
+    background-color: #39106a;
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+}
+
+.ham span:after {
+    content: '';
+    width: 25px;
+    height: 4px;
+    background-color: #39106a;
+    position: absolute;
+    left: 0;
+    top: -7px;
+}
+
+/* 배너 banner_menu */
+.banner_menu {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+}
+
+.banner_menu a {
+    color: #fff;
+    font-size: 14px;
+    transition: all .3s;
+}
+
+.banner_menu a:hover {
+    color: #c1c1c1;
+}
+
+.banner_menu .bm_left {
+    float: left;
+}
+
+.banner_menu .bm_left ul li {
+    display: inline;
+    margin-right: 25px;
+}
+
+.banner_menu .bm_left ul li.total a {
+    font-size: 14px;
+    padding: 3px 10px;
+    display: inline-block;
+    border: 1px solid #fff;
+    transition: all .3s;
+}
+
+.banner_menu .bm_left ul li.total a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.banner_menu .bm_right {
+    float: right;
+}
+
+.banner_menu .bm_right ul {
+    float: left;
+}
+
+.banner_menu .bm_right ul li {
+    display: inline;
+    text-align: center;
+    margin-left: 25px;
+}
+
+.banner_menu li {
+    position: relative;
+}
+
+.banner_menu li.line:after {
+    content: '';
+    width: 1px;
+    height: 14px;
+    background-color: #fff;
+    position: absolute;
+    right: -15px;
+    top: 2px;
+}
+
+.banner_menu li.white a {
+    padding: 7px 30px 9px 30px;
+    background-color: #fff;
+    color: #3a0e6a;
+    border: 1px solid #fff;
+}
+
+.banner_menu li.purple a {
+    padding: 7px 30px 9px 30px;
+    background-color: #3a0e6a;
+    color: #fff;
+    border: 1px solid #6e40c4;
+}
+
+/* 슬라이드 */
+.slider {
+    width: 100%;
+    height: 600px;
+}
+
+.slider .ss1 {
+    background: url(../img/swiper01.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.slider .ss2 {
+    background: url(../img/swiper01.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.slider .ss3 {
+    background: url(../img/swiper01.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+/* mediaquery */
+@media (max-width: 1280px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .row {
+        padding: 0 24px;
+    }
+
+    .header h1 {
+        float: none;
+        text-align: center;
+    }
+
+    .header h1 em {
+        left: 24px;
+    }
+
+    .header .nav {
+        display: none;
+    }
+
+    #mNav {
+        display: block;
+    }
+
+}
+
+@media (max-width: 960px) {}
+
+@media (max-width: 768px) {
+    .row {
+        padding: 0 16px;
+    }
+
+    .header h1 em {
+        display: none;
+    }
+
+    .header h1 {
+        text-align-last: left;
+    }
+
+    #mNav {
+        right: 6px;
+    }
+}
+
+@media (max-width: 480px) {}
+
+@media (max-width: 320px) {}
